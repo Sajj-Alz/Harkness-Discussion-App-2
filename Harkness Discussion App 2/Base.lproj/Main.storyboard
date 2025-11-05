@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="n4C-aM-yq3">
-                                <rect key="frame" x="15" y="84" width="780" height="233.5"/>
+                            <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="n4C-aM-yq3">
+                                <rect key="frame" x="25" y="104" width="780" height="233.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3Pp-YK-07Y">
                                         <rect key="frame" x="0.0" y="0.0" width="780" height="64.5"/>
@@ -72,6 +72,11 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DIe-iK-IKW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="n4C-aM-yq3" firstAttribute="leading" secondItem="DIe-iK-IKW" secondAttribute="leading" constant="35" id="5Fh-3x-43M"/>
+                            <constraint firstItem="n4C-aM-yq3" firstAttribute="leading" secondItem="DIe-iK-IKW" secondAttribute="leading" constant="25" id="Bft-e8-78E"/>
+                            <constraint firstItem="n4C-aM-yq3" firstAttribute="top" secondItem="DIe-iK-IKW" secondAttribute="top" constant="20" id="kzD-Ui-Imb"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Log in" selectedImage="person.crop.circle" catalog="system" id="70C-aA-IHc">
                         <imageReference key="image" image="person.crop.circle" catalog="system" symbolScale="default"/>
@@ -100,8 +105,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="KpQ-jb-uUs">
-                                <rect key="frame" x="20" y="80" width="770" height="402.5"/>
+                            <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="KpQ-jb-uUs">
+                                <rect key="frame" x="35" y="100" width="770" height="402.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7Em-jc-ZRb">
                                         <rect key="frame" x="0.0" y="0.0" width="770" height="64.5"/>
@@ -200,6 +205,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oWk-rP-zzt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KpQ-jb-uUs" firstAttribute="top" secondItem="b4R-DB-i6X" secondAttribute="top" constant="100" id="7Tq-a0-gS6"/>
+                            <constraint firstItem="KpQ-jb-uUs" firstAttribute="leading" secondItem="oWk-rP-zzt" secondAttribute="leading" constant="35" id="ZBd-Iq-nzA"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Sign up" image="circle" catalog="system" selectedImage="circle.fill" id="fql-Rx-3R1"/>
                     <connections>
