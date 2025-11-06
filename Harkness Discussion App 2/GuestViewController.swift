@@ -15,9 +15,18 @@ final class GuestViewController: UIViewController {
     @IBOutlet weak var nightModeButton: UIButton! //button to set to night mode
     @IBOutlet weak var createANewDiscussionImageView: UIImageView! // Create a new discussion image instead of a scroll view featuring all discussions (since first time and guest user have no discussions) (look to critera B for the image
     @IBOutlet weak var createANewDiscussionButton: UIButton! //button that creates the user's first (and maybe only discussion (if user is guest))
+    @IBAction func createANewDiscussionButtonTapped(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Discussion", bundle: nil) // setting the storyboard to the discussion storyboard
+        let secondViewController = storyboard.instantiateViewController(withIdentifier: "DiscussionMaterials") as! UIViewController // Use your Storyboard ID
+        
+        secondViewController.modalPresentationStyle = .fullScreen //ensures that the guest screen does not appear as a pop up but as a new full screen
+            
+            // Present the new view controller
+        self.present(secondViewController, animated: true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        createANewDiscussionImageView.image = UIImage(named:"Create New Discussion Image")
     }
 }

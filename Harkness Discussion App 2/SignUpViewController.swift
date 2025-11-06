@@ -29,7 +29,7 @@ final class SignUpViewController: UIViewController {
         }
     }
     @IBAction func continueAsGuestButtonTapped(_ sender: Any){
-        let storyboard = UIStoryboard(name: "Main", bundle: nil) // setting the storyboard to the discussion storyboard
+        let storyboard = UIStoryboard(name: "Main", bundle: nil) // setting the storyboard to the main storyboard
         let secondViewController = storyboard.instantiateViewController(withIdentifier: "HarknessHomeGuest") as! UIViewController // Use your Storyboard ID
         
         secondViewController.modalPresentationStyle = .fullScreen //ensures that the guest screen does not appear as a pop up but as a new full screen

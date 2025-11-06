@@ -346,7 +346,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6kb-ro-ole">
-                                <rect key="frame" x="47" y="20" width="770" height="67.5"/>
+                                <rect key="frame" x="47" y="40" width="770" height="67.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Harkness" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jo-6o-UBi">
                                         <rect key="frame" x="0.0" y="0.0" width="770" height="31.5"/>
@@ -389,10 +389,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Create a Discussion!"/>
+                                <connections>
+                                    <action selector="createANewDiscussionButtonTapped:" destination="T1S-Z7-7gD" eventType="touchUpInside" id="mQl-gL-GOC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="t4A-Sn-mxo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6kb-ro-ole" firstAttribute="top" secondItem="t4A-Sn-mxo" secondAttribute="top" constant="20" id="u7S-Jb-Q5l"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="colorWheelView" destination="pvZ-7P-nys" id="WJn-2r-OPu"/>
