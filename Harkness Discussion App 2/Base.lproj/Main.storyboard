@@ -60,6 +60,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="780" height="64.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Log in"/>
+                                                <connections>
+                                                    <action selector="logInButtonTapped:" destination="xjB-uR-oJn" eventType="touchUpInside" id="I7c-fZ-J73"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -192,6 +195,9 @@
                                                         <rect key="frame" x="390" y="12" width="380" height="40.5"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Continue as a guest"/>
+                                                        <connections>
+                                                            <action selector="continueAsGuestButtonTapped:" destination="lIf-bO-8YG" eventType="touchUpInside" id="DOg-I0-ewG"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -389,14 +395,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="colorWheelView" destination="pvZ-7P-nys" id="ED3-SC-Fa9"/>
-                        <outlet property="createANewDiscussionButton" destination="5YT-Zd-HoO" id="b3q-Sk-Luf"/>
-                        <outlet property="createANewDiscussionImageView" destination="MSk-os-K6e" id="n15-61-fWA"/>
-                        <outlet property="harkenssLabel" destination="5jo-6o-UBi" id="G3y-9M-Q20"/>
-                        <outlet property="harknessLabel" destination="5jo-6o-UBi" id="aiV-gi-yZ5"/>
-                        <outlet property="horizontalStackView" destination="zbJ-c0-Ncm" id="jaa-wQ-OQG"/>
-                        <outlet property="nightModeButton" destination="Tei-Bz-HE7" id="cG4-N7-QFc"/>
-                        <outlet property="verticalStackView" destination="6kb-ro-ole" id="KZV-8P-4LW"/>
+                        <outlet property="colorWheelView" destination="pvZ-7P-nys" id="WJn-2r-OPu"/>
+                        <outlet property="createANewDiscussionButton" destination="5YT-Zd-HoO" id="dFA-Je-Crc"/>
+                        <outlet property="createANewDiscussionImageView" destination="MSk-os-K6e" id="r9e-In-xYe"/>
+                        <outlet property="harknessLabel" destination="5jo-6o-UBi" id="j9I-Vz-xVg"/>
+                        <outlet property="horizontalStackView" destination="zbJ-c0-Ncm" id="rpf-7J-tAq"/>
+                        <outlet property="nightModeButton" destination="Tei-Bz-HE7" id="djN-Ga-Rot"/>
+                        <outlet property="verticalStackView" destination="6kb-ro-ole" id="qO7-He-Kb3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="toO-UC-WcA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -413,13 +418,13 @@
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="secondaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="tertiaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29803921570000003" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

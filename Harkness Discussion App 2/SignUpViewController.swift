@@ -28,5 +28,14 @@ final class SignUpViewController: UIViewController {
             //load first time user page and increase number of users (in database) and add textFieldInputEmail and textFieldInputConfirmPassword to database
         }
     }
-}
+    @IBAction func continueAsGuestButtonTapped(_ sender: Any){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil) // setting the storyboard to the discussion storyboard
+        let secondViewController = storyboard.instantiateViewController(withIdentifier: "HarknessHomeGuest") as! UIViewController // Use your Storyboard ID
+        
+        secondViewController.modalPresentationStyle = .fullScreen //ensures that the guest screen does not appear as a pop up but as a new full screen
+            
+            // Present the new view controller
+        self.present(secondViewController, animated: true, completion: nil)
+        }
+    }
 
