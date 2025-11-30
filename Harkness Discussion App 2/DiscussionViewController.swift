@@ -6,7 +6,9 @@
 //
 
 import SwiftUI
-final class DiscussionMaterialsViewController:UIViewController {
+import SwiftData
+final class DiscussionMaterialsViewController:UIViewController, UITabBarDelegate {
+        var modelContext: ModelContext? //Allows for accessing of @Models (Databasing from SwiftData)
         @IBOutlet weak var discussionTabBar: UITabBar! // the controller for the tabs in the tab bar present on all discussion views
         @IBOutlet weak var discussionMaterials: UITabBarItem! // the representation of the tab bar item (the page of discussion materials) (present on all discussion views)
         @IBOutlet weak var linkMap: UITabBarItem! // the the representation of the tab bar item (the page of the link map) (present on all discussion views)
@@ -26,7 +28,7 @@ final class DiscussionMaterialsViewController:UIViewController {
         @IBOutlet weak var selectedMaterialsNameLabel: UILabel! // the label serving as the column heading (name) for the table of materials added to the discussion
         @IBOutlet weak var selectedMaterialsTypeLabel: UILabel! // the label serving as the column heading (file type) for the table of materials added to the discussion
         @IBOutlet weak var selectedMaterialsDescriptionLabel: UILabel! // the label serving as the column heading (material description) for the table of materials added to the discussion
-    @IBAction func addMaterialButtonTapped(_ sender: Any) {
+    @IBAction func addMaterialButtonTapped() {
         let storyboard = UIStoryboard(name: "Discussion", bundle: nil) // setting the storyboard to the discussion storyboard
         let secondViewController = storyboard.instantiateViewController(withIdentifier: "DiscussionMaterialsPopUp") as! UIViewController // to load the storyboard to the pop up page
         
@@ -35,9 +37,40 @@ final class DiscussionMaterialsViewController:UIViewController {
         // Present the new view controller
         self.present(secondViewController, animated: true, completion: nil)
         
-    }; @IBAction func linkMapTabSelected(_ sender: Any){
+    }
+    func tabBar (_ tabBar: UITabBar, didSelect item: UITabBarItem){
+        switch item.tag{
+        case 0:
+            discussionMaterialsTabSelected()
+            
+        case 1:
+            linkMapTabSelected()
+        case 2:
+            EvaluationTabSelected()
+        default: break
+        }
+    }
+    func discussionMaterialsTabSelected(){
+       let storyboard = UIStoryboard(name: "Discussion", bundle: nil) // setting the storyboard to the discussion storyboard
+       let secondViewController = storyboard.instantiateViewController(withIdentifier: "DiscussionMaterialsView") as! UIViewController // to load the storyboard to the pop up page
+       
+       secondViewController.modalPresentationStyle = .fullScreen //ensures that the guest screen does not appear as a pop up but as a new full screen
+           
+           // Present the new view controller
+       self.present(secondViewController, animated: true, completion: nil)
+   }
+     func linkMapTabSelected(){
         let storyboard = UIStoryboard(name: "Discussion", bundle: nil) // setting the storyboard to the discussion storyboard
         let secondViewController = storyboard.instantiateViewController(withIdentifier: "DiscussionLinkMap") as! UIViewController // to load the storyboard to the pop up page
+        
+        secondViewController.modalPresentationStyle = .fullScreen //ensures that the guest screen does not appear as a pop up but as a new full screen
+            
+            // Present the new view controller
+        self.present(secondViewController, animated: true, completion: nil)
+    }
+    func EvaluationTabSelected(){
+        let storyboard = UIStoryboard(name: "Discussion", bundle: nil) // setting the storyboard to the discussion storyboard
+        let secondViewController = storyboard.instantiateViewController(withIdentifier: "DiscussionEvaluation") as! UIViewController // to load the storyboard to the pop up page
         
         secondViewController.modalPresentationStyle = .fullScreen //ensures that the guest screen does not appear as a pop up but as a new full screen
             
@@ -47,7 +80,11 @@ final class DiscussionMaterialsViewController:UIViewController {
      
     override func viewDidLoad() {
         super.viewDidLoad()
+        discussionTabBar.delegate = self
         // Do any additional setup after loading the view.
+        if let appDelegate = UIApplication.shared.delegate as? AppDelegate, let container = appDelegate.modelContainer {
+                    modelContext = ModelContext(container)
+                }
     }
 }
 

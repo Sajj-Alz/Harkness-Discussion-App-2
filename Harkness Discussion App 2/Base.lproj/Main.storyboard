@@ -245,7 +245,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pAk-hP-VGU">
-                                <rect key="frame" x="47" y="20" width="770" height="67.5"/>
+                                <rect key="frame" x="47" y="20" width="770" height="72"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Harkness" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccG-Fg-5gg">
                                         <rect key="frame" x="0.0" y="0.0" width="770" height="31.5"/>
@@ -254,15 +254,15 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="rba-Qz-Xe7">
-                                        <rect key="frame" x="0.0" y="31.5" width="770" height="36"/>
+                                        <rect key="frame" x="0.0" y="31.5" width="770" height="40.5"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search Discussions" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oAh-Ke-dAf">
-                                                <rect key="frame" x="0.0" y="0.0" width="434.5" height="36"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="264.5" height="40.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55R-Ys-CMX" userLabel="Sort">
-                                                <rect key="frame" x="434.5" y="0.0" width="93" height="36"/>
+                                                <rect key="frame" x="264.5" y="0.0" width="56.5" height="40.5"/>
                                                 <menu key="menu" id="Ts5-jf-ek0">
                                                     <children>
                                                         <command title="By Recency" id="iWr-WA-Tu7"/>
@@ -272,10 +272,10 @@
                                                 <state key="normal" title="Sort "/>
                                             </button>
                                             <colorWell contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jle-iD-JYL">
-                                                <rect key="frame" x="527.5" y="0.0" width="101.5" height="36"/>
+                                                <rect key="frame" x="321" y="0.0" width="62" height="40.5"/>
                                             </colorWell>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDI-Aq-wRs">
-                                                <rect key="frame" x="629" y="0.0" width="141" height="36"/>
+                                                <rect key="frame" x="383" y="0.0" width="207" height="40.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
                                                     <imageReference key="image" image="moonphase.waning.crescent" catalog="system" renderingMode="hierarchical">
@@ -287,8 +287,20 @@
                                                     </imageReference>
                                                 </buttonConfiguration>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HtK-dC-BFr">
+                                                <rect key="frame" x="590" y="0.0" width="180" height="40.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="180" id="P7k-AN-dMI"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Create a DIscussion"/>
+                                                <connections>
+                                                    <action selector="createANewDiscussionButtonTapped:" destination="BpI-jx-g68" eventType="touchUpInside" id="YoA-bW-NMp"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="HtK-dC-BFr" secondAttribute="trailing" constant="10" id="2YU-e4-crT"/>
                                             <constraint firstAttribute="width" constant="770" id="buC-Zd-47K"/>
                                         </constraints>
                                     </stackView>
@@ -306,6 +318,7 @@
                     </view>
                     <connections>
                         <outlet property="colorWheelView" destination="jle-iD-JYL" id="Dz5-ko-Io3"/>
+                        <outlet property="createANewDiscussionButton" destination="HtK-dC-BFr" id="1wq-rq-kCY"/>
                         <outlet property="harknessLabel" destination="ccG-Fg-5gg" id="kGr-e4-Bna"/>
                         <outlet property="horizontalStackView" destination="pAk-hP-VGU" id="reR-X1-eBc"/>
                         <outlet property="nightModeButton" destination="gDI-Aq-wRs" id="85n-ga-7Ux"/>
@@ -341,12 +354,12 @@
         <scene sceneID="u7q-kB-V1n">
             <objects>
                 <viewController storyboardIdentifier="HarknessHomeGuest" useStoryboardIdentifierAsRestorationIdentifier="YES" id="T1S-Z7-7gD" customClass="GuestViewController" customModule="Harkness_Discussion_App_2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="oRb-dk-lQc">
+                    <view key="view" contentMode="center" ambiguous="YES" id="oRb-dk-lQc">
                         <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6kb-ro-ole">
-                                <rect key="frame" x="47" y="40" width="770" height="67.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6kb-ro-ole">
+                                <rect key="frame" x="50" y="40" width="770" height="67.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Harkness" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jo-6o-UBi">
                                         <rect key="frame" x="0.0" y="0.0" width="770" height="31.5"/>
@@ -390,13 +403,15 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Create a Discussion!"/>
                                 <connections>
-                                    <action selector="createANewDiscussionButtonTapped:" destination="T1S-Z7-7gD" eventType="touchUpInside" id="mQl-gL-GOC"/>
+                                    <action selector="createANewDiscussionButtonTapped:" destination="T1S-Z7-7gD" eventType="touchUpInside" id="LpF-3q-M6K"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="t4A-Sn-mxo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6kb-ro-ole" firstAttribute="leading" secondItem="t4A-Sn-mxo" secondAttribute="leading" constant="50" id="ASB-EZ-c0Z"/>
+                            <constraint firstAttribute="trailing" secondItem="6kb-ro-ole" secondAttribute="trailing" id="t8v-gK-819"/>
                             <constraint firstItem="6kb-ro-ole" firstAttribute="top" secondItem="t4A-Sn-mxo" secondAttribute="top" constant="20" id="u7S-Jb-Q5l"/>
                         </constraints>
                     </view>
@@ -424,13 +439,13 @@
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="secondaryLabelColor">
-            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="tertiaryLabelColor">
-            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29803921570000003" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import SwiftData
+import UniformTypeIdentifiers
 // all of the following contains the content of the pop up that will appear when the add material button is selected on the discussion mateials page
 final class AddMaterialViewController: UIViewController {
+    var modelContext: ModelContext? //Allows for accessing of @Models (Databasing from SwiftData)
     @IBOutlet weak var totalVerticalStackView: UIStackView! // stack view holding all content for the pop up when the add material
     @IBOutlet weak var materialNameHorizontalStackView: UIStackView! // stack view holding the label that askes for the name of the material and the associated text field
     @IBOutlet weak var materialNameLabel: UILabel! // label asking for the name of the material
@@ -18,6 +21,16 @@ final class AddMaterialViewController: UIViewController {
     @IBOutlet weak var submitMaterialButton: UIButton! // button where these details are inputted
     @IBAction func submitMaterialButtonTapped(_ sender: Any) {
         // open the filemanager needs to be included before this
+        guard let modelContext = modelContext else { return }
+        let docPicker = UIDocumentPickerViewController()
+               // let newMaterial 
+         // modelContext.insert(newMaterial)
+               do {
+                   try modelContext.save()
+                    // Refresh data and UI
+               } catch {
+                   print("Failed to save new ToDoItem: \(error)")
+               }
         let storyboard = UIStoryboard(name: "Discussion", bundle: nil) // setting the storyboard to the discussion storyboard
         let secondViewController = storyboard.instantiateViewController(withIdentifier: "DiscussionMaterials") as! UIViewController // to return to the pop up page
         

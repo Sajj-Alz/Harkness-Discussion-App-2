@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
+import SwiftData
 // this view will also be used by first time user since they do not have a list of discussions
 final class GuestViewController: UIViewController {
+    var modelContext: ModelContext?
     @IBOutlet weak var verticalStackView: UIStackView! //contains the label harkness as well as the color wheel and the dark mode setting(button)
     @IBOutlet weak var harknessLabel: UILabel! //contains the label harkness
     @IBOutlet weak var horizontalStackView: UIStackView! //contains horizontal stack view to distribute the color picker (for the background) and the night mode setting

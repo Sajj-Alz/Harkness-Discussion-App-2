@@ -6,8 +6,9 @@
 //
 
 import SwiftUI
-
+import SwiftData
 final class LogInViewController: UIViewController {
+    var modelContext: ModelContext? //Allows for accessing of @Models (Databasing from SwiftData)
     @IBOutlet weak var totalVerticalStackView: UIStackView! // stack view holding all content of the log in page
     @IBOutlet weak var emailAddressVerticalStackView: UIStackView! // stack view holding label asking for email address and associated text field
     @IBOutlet weak var emailAddressLabel: UILabel! // Label asking for email address
@@ -24,6 +25,14 @@ final class LogInViewController: UIViewController {
         if !textFieldInputEmail!.isEmpty && !textFieldInputPassword!.isEmpty {
             //loop through database of users (for all users) and then if you find a user with the exact email and password log them in then load them into that account
             // ex: for User{ if self.emailAddress!==textFieldInputEmail && self.password!==textFieldInputPassword{ then load the main page of that user (using info from database}
+            let storyboard = UIStoryboard(name: "Main", bundle: nil) // setting the storyboard to the main storyboard
+            let secondViewController = storyboard.instantiateViewController(withIdentifier: "HarknessHomePermanentUser") as! UIViewController // Use your Storyboard ID
+            
+            secondViewController.modalPresentationStyle = .fullScreen //ensures that the guest screen does not appear as a pop up but as a new full screen
+                
+                // Present the new view controller
+            self.present(secondViewController, animated: true, completion: nil)
+            
         }
     }
 }
