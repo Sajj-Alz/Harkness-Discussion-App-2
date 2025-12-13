@@ -13,7 +13,7 @@ class DataManager{ //class to manage a database
     let modelContainer: ModelContainer // a container that holds @Models (takes the class and turns it into a data model
     private init() {
         do {
-            modelContainer = try ModelContainer()
+            modelContainer = try ModelContainer(for: Material.self,Student.self,Discussion.self,LinkMap.self,Interaction.self) //specifying which classes I am making a the container for (the classes that will be databased
         } catch {
             fatalError("Failed to create ModelContainer: \(error)") //do catch (incase there is an issue)
         }
