@@ -1,0 +1,6 @@
+framework module FastDraw {
+  umbrella header "FastDraw-umbrella.h"
+
+  export *
+  module * { export * }
+}

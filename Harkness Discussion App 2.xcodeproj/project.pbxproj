@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2E4A831F25551CC5B142806C /* Pods_Harkness_Discussion_App_2_Harkness_Discussion_App_2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE236545B7C9B718696B0EC /* Pods_Harkness_Discussion_App_2_Harkness_Discussion_App_2UITests.framework */; };
+		51A6CCB84113A4A20420B382 /* Pods_Harkness_Discussion_App_2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DF6E0AB33BB775371A3B239 /* Pods_Harkness_Discussion_App_2.framework */; };
+		AC0855432244BAF0096C7797 /* Pods_Harkness_Discussion_App_2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E643D6048DE08C8712416AB8 /* Pods_Harkness_Discussion_App_2Tests.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		BA8695C72EBB5E3100DF5839 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,9 +30,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AA7E6D35A0872EA304A4FE3 /* Pods-Harkness Discussion App 2-Harkness Discussion App 2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harkness Discussion App 2-Harkness Discussion App 2UITests.debug.xcconfig"; path = "Target Support Files/Pods-Harkness Discussion App 2-Harkness Discussion App 2UITests/Pods-Harkness Discussion App 2-Harkness Discussion App 2UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		11BD90E231D38ACB254F6F18 /* Pods-Harkness Discussion App 2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harkness Discussion App 2.release.xcconfig"; path = "Target Support Files/Pods-Harkness Discussion App 2/Pods-Harkness Discussion App 2.release.xcconfig"; sourceTree = "<group>"; };
+		2EE236545B7C9B718696B0EC /* Pods_Harkness_Discussion_App_2_Harkness_Discussion_App_2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Harkness_Discussion_App_2_Harkness_Discussion_App_2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DF6E0AB33BB775371A3B239 /* Pods_Harkness_Discussion_App_2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Harkness_Discussion_App_2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D18F565D447DB06BEF49113 /* Pods-Harkness Discussion App 2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harkness Discussion App 2.debug.xcconfig"; path = "Target Support Files/Pods-Harkness Discussion App 2/Pods-Harkness Discussion App 2.debug.xcconfig"; sourceTree = "<group>"; };
 		BA8695B02EBB5E2E00DF5839 /* Harkness Discussion App 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Harkness Discussion App 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8695C62EBB5E3100DF5839 /* Harkness Discussion App 2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Harkness Discussion App 2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8695D02EBB5E3100DF5839 /* Harkness Discussion App 2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Harkness Discussion App 2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C86C8B58B9FE1CC67A6D67C6 /* Pods-Harkness Discussion App 2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harkness Discussion App 2Tests.debug.xcconfig"; path = "Target Support Files/Pods-Harkness Discussion App 2Tests/Pods-Harkness Discussion App 2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E368EECB9E8586A4E27452DA /* Pods-Harkness Discussion App 2-Harkness Discussion App 2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harkness Discussion App 2-Harkness Discussion App 2UITests.release.xcconfig"; path = "Target Support Files/Pods-Harkness Discussion App 2-Harkness Discussion App 2UITests/Pods-Harkness Discussion App 2-Harkness Discussion App 2UITests.release.xcconfig"; sourceTree = "<group>"; };
+		E643D6048DE08C8712416AB8 /* Pods_Harkness_Discussion_App_2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Harkness_Discussion_App_2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAD58BC8D6820BF4FCE0A3EB /* Pods-Harkness Discussion App 2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harkness Discussion App 2Tests.release.xcconfig"; path = "Target Support Files/Pods-Harkness Discussion App 2Tests/Pods-Harkness Discussion App 2Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -65,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51A6CCB84113A4A20420B382 /* Pods_Harkness_Discussion_App_2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC0855432244BAF0096C7797 /* Pods_Harkness_Discussion_App_2Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,12 +96,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E4A831F25551CC5B142806C /* Pods_Harkness_Discussion_App_2_Harkness_Discussion_App_2UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30091DCD456D28B64892581F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D18F565D447DB06BEF49113 /* Pods-Harkness Discussion App 2.debug.xcconfig */,
+				11BD90E231D38ACB254F6F18 /* Pods-Harkness Discussion App 2.release.xcconfig */,
+				0AA7E6D35A0872EA304A4FE3 /* Pods-Harkness Discussion App 2-Harkness Discussion App 2UITests.debug.xcconfig */,
+				E368EECB9E8586A4E27452DA /* Pods-Harkness Discussion App 2-Harkness Discussion App 2UITests.release.xcconfig */,
+				C86C8B58B9FE1CC67A6D67C6 /* Pods-Harkness Discussion App 2Tests.debug.xcconfig */,
+				EAD58BC8D6820BF4FCE0A3EB /* Pods-Harkness Discussion App 2Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3C7027FEC1E3089108951963 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DF6E0AB33BB775371A3B239 /* Pods_Harkness_Discussion_App_2.framework */,
+				2EE236545B7C9B718696B0EC /* Pods_Harkness_Discussion_App_2_Harkness_Discussion_App_2UITests.framework */,
+				E643D6048DE08C8712416AB8 /* Pods_Harkness_Discussion_App_2Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BA8695A72EBB5E2E00DF5839 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +133,8 @@
 				BA8695C92EBB5E3100DF5839 /* Harkness Discussion App 2Tests */,
 				BA8695D32EBB5E3100DF5839 /* Harkness Discussion App 2UITests */,
 				BA8695B12EBB5E2E00DF5839 /* Products */,
+				30091DCD456D28B64892581F /* Pods */,
+				3C7027FEC1E3089108951963 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +155,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA8695D92EBB5E3100DF5839 /* Build configuration list for PBXNativeTarget "Harkness Discussion App 2" */;
 			buildPhases = (
+				F4828533449040BE58DD2CB9 /* [CP] Check Pods Manifest.lock */,
 				BA8695AC2EBB5E2E00DF5839 /* Sources */,
 				BA8695AD2EBB5E2E00DF5839 /* Frameworks */,
 				BA8695AE2EBB5E2E00DF5839 /* Resources */,
@@ -124,8 +168,6 @@
 				BA8695B22EBB5E2E00DF5839 /* Harkness Discussion App 2 */,
 			);
 			name = "Harkness Discussion App 2";
-			packageProductDependencies = (
-			);
 			productName = "Harkness Discussion App 2";
 			productReference = BA8695B02EBB5E2E00DF5839 /* Harkness Discussion App 2.app */;
 			productType = "com.apple.product-type.application";
@@ -134,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA8695DE2EBB5E3100DF5839 /* Build configuration list for PBXNativeTarget "Harkness Discussion App 2Tests" */;
 			buildPhases = (
+				16BDE458371F9C43A114BCD4 /* [CP] Check Pods Manifest.lock */,
 				BA8695C22EBB5E3100DF5839 /* Sources */,
 				BA8695C32EBB5E3100DF5839 /* Frameworks */,
 				BA8695C42EBB5E3100DF5839 /* Resources */,
+				3C2C036EF010D4E184C8CEE9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -147,8 +191,6 @@
 				BA8695C92EBB5E3100DF5839 /* Harkness Discussion App 2Tests */,
 			);
 			name = "Harkness Discussion App 2Tests";
-			packageProductDependencies = (
-			);
 			productName = "Harkness Discussion App 2Tests";
 			productReference = BA8695C62EBB5E3100DF5839 /* Harkness Discussion App 2Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -157,6 +199,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA8695E12EBB5E3100DF5839 /* Build configuration list for PBXNativeTarget "Harkness Discussion App 2UITests" */;
 			buildPhases = (
+				2EC9D0B2F424B353B9EC48E7 /* [CP] Check Pods Manifest.lock */,
 				BA8695CC2EBB5E3100DF5839 /* Sources */,
 				BA8695CD2EBB5E3100DF5839 /* Frameworks */,
 				BA8695CE2EBB5E3100DF5839 /* Resources */,
@@ -170,8 +213,6 @@
 				BA8695D32EBB5E3100DF5839 /* Harkness Discussion App 2UITests */,
 			);
 			name = "Harkness Discussion App 2UITests";
-			packageProductDependencies = (
-			);
 			productName = "Harkness Discussion App 2UITests";
 			productReference = BA8695D02EBB5E3100DF5839 /* Harkness Discussion App 2UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -208,6 +249,9 @@
 			);
 			mainGroup = BA8695A72EBB5E2E00DF5839;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				BA4CAF152EED4D14009E391B /* XCRemoteSwiftPackageReference "FastDraw" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = BA8695B12EBB5E2E00DF5839 /* Products */;
 			projectDirPath = "";
@@ -243,6 +287,92 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16BDE458371F9C43A114BCD4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Harkness Discussion App 2Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2EC9D0B2F424B353B9EC48E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Harkness Discussion App 2-Harkness Discussion App 2UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C2C036EF010D4E184C8CEE9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Harkness Discussion App 2Tests/Pods-Harkness Discussion App 2Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Harkness Discussion App 2Tests/Pods-Harkness Discussion App 2Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Harkness Discussion App 2Tests/Pods-Harkness Discussion App 2Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4828533449040BE58DD2CB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Harkness Discussion App 2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BA8695AC2EBB5E2E00DF5839 /* Sources */ = {
@@ -284,6 +414,7 @@
 /* Begin XCBuildConfiguration section */
 		BA8695DA2EBB5E3100DF5839 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D18F565D447DB06BEF49113 /* Pods-Harkness Discussion App 2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -311,6 +442,7 @@
 		};
 		BA8695DB2EBB5E3100DF5839 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11BD90E231D38ACB254F6F18 /* Pods-Harkness Discussion App 2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -457,6 +589,7 @@
 		};
 		BA8695DF2EBB5E3100DF5839 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C86C8B58B9FE1CC67A6D67C6 /* Pods-Harkness Discussion App 2Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -475,6 +608,7 @@
 		};
 		BA8695E02EBB5E3100DF5839 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAD58BC8D6820BF4FCE0A3EB /* Pods-Harkness Discussion App 2Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -493,6 +627,7 @@
 		};
 		BA8695E22EBB5E3100DF5839 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AA7E6D35A0872EA304A4FE3 /* Pods-Harkness Discussion App 2-Harkness Discussion App 2UITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -509,6 +644,7 @@
 		};
 		BA8695E32EBB5E3100DF5839 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E368EECB9E8586A4E27452DA /* Pods-Harkness Discussion App 2-Harkness Discussion App 2UITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -563,6 +699,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BA4CAF152EED4D14009E391B /* XCRemoteSwiftPackageReference "FastDraw" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/collinzrj/FastDraw";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = BA8695A82EBB5E2E00DF5839 /* Project object */;
 }

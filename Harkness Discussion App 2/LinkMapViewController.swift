@@ -79,6 +79,6 @@ final class LinkMapViewController: UIViewController,  UITabBarDelegate {
         super.viewDidLoad()
         linkMapImageView.image = UIImage(named:"Harkness Link Map")
         linkMapTabBar.delegate = self
-        modelContext = DataManager.shared.modelContainer.mainContext
+        // modelContext = DataManager.shared.modelContainer.mainContext
     }
 }

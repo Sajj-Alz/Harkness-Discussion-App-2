@@ -1,0 +1,6 @@
+framework module Pods_Harkness_Discussion_App_2_Harkness_Discussion_App_2UITests {
+  umbrella header "Pods-Harkness Discussion App 2-Harkness Discussion App 2UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
